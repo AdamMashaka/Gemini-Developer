@@ -16,6 +16,11 @@ urlpatterns = [
     path('signup_action/', views.signup_action, name='signup_action'),
     path('profile/', views.profile, name='profile'),
     path('notse/index.html', views.notse_index, name='notse_index'),
+    path('pricing/index.html', views.notse_index, name='pricing_index'),
+    path('notse/pricing.html', views.notse_index, name='notse_pricing'),
+    path('notse/blog.html', views.notse_index, name='notse_blog'),
+    path('pricing/notse.html', views.notse_index, name='pricing_notse'),
+    path('pricing/contact.html', views.notse_index, name='pricing_contact'),
     
 
 

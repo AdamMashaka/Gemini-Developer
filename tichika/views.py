@@ -69,3 +69,20 @@ def resetpassword(request):
 
 def notse_index(request):
     return render(request, 'index.html')
+
+def pricing_index(request):
+    return render(request, 'index.html')
+
+def notse_pricing(request):
+    return render(request, 'pricing.html')
+
+def notse_blog(request):
+    return render(request, 'blog.html')
+
+def blog_notse(request):
+    return render(request, 'notse.html')
+
+def pricing_contact(request):
+    return render(request, 'contact.html')
+
+
