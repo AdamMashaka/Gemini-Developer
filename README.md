@@ -1,24 +1,28 @@
-# Safety Detection Flask Web App
+# Gemini Development
 
-## Overview
+ iS THE web application that build with **HTML,CSS,JS and DJANGO** that i was intergrate with gemini API in order to act as a bot of education to help studen to answer differen question concerning about education issue 
 
-This repository contains a Flask web application for detecting safety equipment and conditions. The app supports:
+## HOW TO USE IT 
 
-- **Image Upload**: Analyze static images for safety detection.
-- **Video Processing**: Process video files to detect safety-related objects.
-- **Real-Time Webcam Feed**: Analyze live webcam feeds for safety conditions.
+clone the repo 
+```sh
+   git clone https://Githhub.com/AdamMashaka/Gemini-Developer
+```
 
-## Features
+**path to you are directory**
 
-- **Image and Video Analysis**: Upload images or videos to check for safety equipment.
-- **Live Webcam Monitoring**: View and analyze real-time webcam feeds.
-- **Advanced Detection Algorithms**: Provides accurate identification of safety-related objects and conditions.
+```
+cd ----> usr/Downloads/Gemini-Developer 
 
-## Installation
+```
+install requirement 
 
-1. **Clone the Repository**:
+```
+pip install requirements.txt
 
-   ```sh
-   git clone https://github.com/AdamMashaka
-   cd your-repository-name
-   python app.py
+```
+make sure you have python in you are local machine 
+
+## DO NOT FORGET TO GIVE IT A STAR
+
+## ALL CREDIT GOES TO ADAM MASHAKA
