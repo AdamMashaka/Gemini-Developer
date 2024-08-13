@@ -1,56 +1,29 @@
+# Gemini Development
 
-TITLE: 
-Learn - 100% Fully Responsive Free HTML5 Bootstrap Template
-AUTHOR:
-DESIGNED & DEVELOPED by Adam Katani
+ iS THE web application that build with **HTML,CSS,JS and DJANGO ** that i was intergrate with gemini API in order to act as a bot of education to help studen to answer differen question concerning about education issue 
 
-Website: http://adamportifolio.netlify.app/
-Twitter: @AdamMashaka1
+## HOW TO USE IT 
 
+clone the repo 
+```
+git clone https://Githhub.com/AdamMashaka/Gemini-Developer
 
+```
 
-CREDITS:
-Adam Katani
+** pathh to you are path 
 
-Bootstrap
-http://getbootstrap.com/
+```
+cd ----> usr/Downloads/Gemini-Developer 
 
-jQuery
-http://jquery.com/
+```
+install requirement 
 
-jQuery Easing
-http://gsgd.co.uk/sandbox/jquery/easing/
+```
+pip install requirements.txt
 
-Modernizr
-http://modernizr.com/
+```
+make sure you have python in you are local machine 
 
-Google Fonts
-https://www.google.com/fonts/
+## DO NOT FORGET TO GIVE IT A STAR
 
-Icomoon
-https://icomoon.io/app/
-
-Respond JS
-https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
-
-animate.css
-http://daneden.me/animate
-
-jQuery Waypoint
-https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
-
-Owl Carousel
-http://www.owlcarousel.owlgraphic.com/
-
-jQuery countTo
-http://www.owlcarousel.owlgraphic.com/
-
-Magnific Popup
-http://dimsemenov.com/plugins/magnific-popup/
-
-Stellar Parallax
-http://markdalgleish.com/projects/stellar.js/
-
-Demo Images:
-http://unsplash.com
-
+## ALL CREDIT GOES TO ADAM MASHAKA
