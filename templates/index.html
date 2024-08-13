@@ -175,47 +175,47 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>Our Project</h2>
-					<p>Some projects that our team has been working on recently.</p>
+					<h2>Our Teachers</h2>
+					<p>Below is the list of the teachers that have been signed in our platform</p>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid proj-bottom">
 			<div class="row">
 				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="{% static 'images/work_1.jpg' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Web Design</h3>
-						<span>View Project</span>
+					<a href="#"><img src="{% static 'images/biology.png' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Biology</h3>
+						<span>View Teachers</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="{% static 'images/work_1.jpg' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Web Design</h3>
-						<span>View Project</span>
+					<a href="#"><img src="{% static 'images/english.png' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>English</h3>
+						<span>View Teachers</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="{% static 'images/work_1.jpg' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Web Design</h3>
-						<span>View Project</span>
+					<a href="#"><img src="{% static 'images/history.png' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>History</h3>
+						<span>View Teachers</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="{% static 'images/work_1.jpg' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Web Design</h3>
-						<span>View Project</span>
+					<a href="#"><img src="{% static 'images/chemistry.png' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Chemistry</h3>
+						<span>View Teachers</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="{% static 'images/work_1.jpg' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Web Design</h3>
-						<span>View Project</span>
+					<a href="#"><img src="{% static 'images/physics.png' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>Physics</h3>
+						<span>View Teachers</span>
 					</a>
 				</div>
 				<div class="col-md-4 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-					<a href="#"><img src="{% static 'images/work_1.jpg' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
-						<h3>Web Design</h3>
-						<span>View Project</span>
+					<a href="#"><img src="{% static 'images/mathematics.png' %}" alt="Free HTML5 Website Template by FreeHTML5.co" class="img-responsive">
+						<h3>MAthematics</h3>
+						<span>View Teachers</span>
 					</a>
 				</div>
 			</div>
@@ -352,16 +352,16 @@
 				<div class="col-md-3 col-sm-12 col-xs-12 fh5co-widget">
 					<h4>Contact Us</h4>
 					<ul class="fh5co-footer-links">
-						<li>12345 Fake St.<br>New York, NY 12345</li>
-						<li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+						<li>12016 Posta St.<br>Dar es salaam, Tanzania</li>
+						<li><a href="tel:+1234567890">+255694 021-848</a></li>
 						<li><a href="mailto:info@tichika.com">info@tichika.com</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<p>&copy; 2023 Tichika. All Rights Reserved.</p>
-					<p>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a></p>
+					<p>&copy; 2024 Tichika. All Rights Reserved.</p>
+					<p>Designed by <a href="http://Github.com/AdamMashaka" target="_blank">AdamMashaka</a></p>
 				</div>
 			</div>
 		</div>
@@ -392,5 +392,123 @@
 	<!-- Main -->
 	<script src="{% static 'js/main.js' %}"></script>
 
-	</body>
+ <!-- Chatbot Section -->
+ <div id="chatbot-container" class="chatbot-container">
+	<div class="chatbot-header">
+		<h4>Ask Our AI Chatbot</h4>
+		<button id="close-chatbot" class="btn btn-secondary">Close</button>
+	</div>
+	<div class="chatbot-body">
+		<div id="chatbot-messages" class="chatbot-messages"></div>
+		<input type="text" id="chatbot-input" placeholder="Type your question here...">
+		<button id="send-button" class="btn btn-primary">Send</button>
+	</div>
+</div>
+
+<!-- Chatbot Toggle Button -->
+<button id="open-chatbot" class="btn btn-primary">Chat with us</button>
+
+<!-- Include necessary scripts -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/magnific-popup-options.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+<!-- Add CSS for full-page chatbot -->
+<style>
+	#chatbot-container {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        height: 400px;
+        background: white;
+        color: black;
+        z-index: 1000;
+        overflow-y: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	}
+
+	.chatbot-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background: #333;
+        cursor: move; /* Indicate draggable area */
+	}
+
+	.chatbot-body {
+		padding: 20px;
+	}
+
+	.chatbot-messages {
+		max-height: 70vh;
+		overflow-y: auto;
+		margin-bottom: 10px;
+	}
+
+	.user-message {
+		color: white;
+	}
+
+	#open-chatbot {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 1001;
+	}
+</style>
+
+<!-- Add JavaScript for chatbot functionality -->
+<script>
+	document.getElementById("send-button").addEventListener("click", function() {
+		const userInput = document.getElementById("chatbot-input").value;
+		if (userInput) {
+			// Add the user's question to the chat
+			const messages = document.getElementById("chatbot-messages");
+			const userMessage = document.createElement("div");
+			userMessage.textContent = "You: " + userInput;
+			messages.appendChild(userMessage);
+
+			// Call the Django endpoint to get the response
+			fetch('/api/chatbot-api/', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({ question: userInput }),
+			})
+			.then(response => response.json())
+			.then(data => {
+				const botMessage = document.createElement("div");
+				botMessage.textContent = "Bot: " + data.answer;
+				messages.appendChild(botMessage);
+			})
+			.catch(error => {
+				console.error('Error:', error);
+			});
+		}
+	});
+
+	// Toggle chatbot visibility
+	document.getElementById("open-chatbot").addEventListener("click", function() {
+		document.getElementById("chatbot-container").style.display = "block";
+		document.getElementById("open-chatbot").style.display = "none";
+	});
+
+	document.getElementById("close-chatbot").addEventListener("click", function() {
+		document.getElementById("chatbot-container").style.display = "none";
+		document.getElementById("open-chatbot").style.display = "block";
+	});
+</script>
+</body>
 </html>
