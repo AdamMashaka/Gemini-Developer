@@ -1,6 +1,7 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 from .views import notse_view, contact_view
+from django.contrib import admin
 
 urlpatterns = [
      path('admin/', admin.site.urls),
@@ -9,4 +10,5 @@ urlpatterns = [
     path('blog/', views.blog, name='blog'),
     path('notse/', views.notse, name='notse'),
     path('notse/', notse_view, name='notse'), 
+    path('api/', include('api_integration.urls')),
 ]
