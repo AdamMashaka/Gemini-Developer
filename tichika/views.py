@@ -9,23 +9,31 @@ from transformers import pipeline
 import os
 
 # Set your OpenAI API key here
-client = OpenAI(api_key='enter you are key')
 
 
 
 
-@csrf_exempt
-def chatbot_api(request):
-    if request.method == 'POST':
-        data = json.loads(request.body)
-        question = data.get('question')
 
-        # Logic to process the question and get the response from ChatGPT API
-        answer = get_chatgpt_response(question)
+def get_gemini_response(question):
+    gemini_api_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent"
 
-        return JsonResponse({'answer': answer})
-    else:
-        return JsonResponse({'error': 'Invalid request method'}, status=400)
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer YOUR_API_KEY_HERE'  # Replace with your actual API key
+    }
+
+    payload = {
+        'prompt': {
+            'text': question
+        }
+    }
+
+    try:
+        response = requests.post(gemini_api_url, headers=headers, json=payload)
+        response.raise_for_status()  # Raise an error for bad status codes
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        return f"An error occurred: {str(e)}"
 
 @csrf_exempt
 def ask_question(request):
@@ -40,24 +48,7 @@ def ask_question(request):
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=400)
 
-def get_chatgpt_response(question):
-    try:
-        # Make a request to the OpenAI API using the newer method
-        response = client.chat.completions.create(model="gpt-3.5-turbo",  # Use the model you prefer (e.g., "gpt-4")
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": question},
-        ])
-        # Extract and return the response text
-        return response.choices[0].message.content
-    except Exception as e:
-        return f"An error occurred: {str(e)}"
 
-# Example usage
-if __name__ == "__main__":
-    question = "What is the weather today?"
-    response = get_chatgpt_response(question)
-    print(response)
 
 # Other views remain unchanged
 def signup_action(request):
